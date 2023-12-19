@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap5 Flex Tutorial</title>
+    <!-- Bootstrap CSS Linking Starts Here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap JS Linking Starts Here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        .bd-highlight{
+            background-color: bisque;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin-top: 10px;
+        }
+        .item2{
+            background-color: red;
+            margin-top: 10px;
+        }
+        .justify_content{
+            background-color: gray;
+        }
+        .div1{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h4>Flex Property Here:</h4>
+    <h3>Flex Row Starts Here:</h3>
+    <div class="container d-flex flex-row gap-2 ">
+        <div class="bd-highlight">diplay item-1</div>
+        <div class="bd-highlight">diplay item-2</div>
+        <div class="bd-highlight">diplay item-3</div>
+    </div>
+    <h4>Flex Row Reverse Starts Here:</h4>
+    <div class="container">
+        <div class="d-flex flex-row-reverse text-white gap-4  ">
+            <div class="item">Category1</div>
+            <div class="item">Category2</div>
+            <div class="item">Category3</div>
+        </div>
+    </div>
+    <!-- Flex Column Starts Here -->
+    <h4>Flex Column Starts Here:</h4>
+    <div class="container">
+        <div class="d-flex flex-column  text-white gap-4  ">
+            <div class="item">Category1</div>
+            <div class="item">Category2</div>
+            <div class="item">Category3</div>
+        </div>
+    </div>
+    <!-- Flex Column-Reverse Starts Here -->
+    <h4>Flex Column-Reverse Starts Here:</h4>
+    <div class="container">
+        <div class="d-flex flex-column-reverse text-white gap-4">
+            <div class="item2">Category1</div>
+            <div class="item2">Category2</div>
+            <div class="item2">Category3</div>
+        </div>
+    </div>
+    <!-- Justify Content Starts Here: -->
+    <h4>Justify Content Starts Here:</h4>
+    <div class="container">
+      <div class="d-flex justify-content-start">
+        <div class="justify_content text-black p-2">Content1</div>
+        <div class="justify_content text-black p-2">Content2</div>
+        <div class="justify_content text-black p-2">Content3</div>
+      </div>
+    </div>
+    <!-- Justify Content Ends Here: -->
+</body>
+    <!-- Justify Content Starts Here: -->
+    <h4>Justify Content Ends Here:</h4>
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <div class="justify_content text-black p-2">Content1</div>
+        <div class="justify_content text-black p-2">Content2</div>
+        <div class="justify_content text-black p-2">Content3</div>
+      </div>
+    </div>
+    <!-- Justify Content Ends Here: -->
+    <h4>Justify Content Center Here:</h4>
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <div class="justify_content text-black p-2 bg-success">Content1</div>
+        <div class="justify_content text-black p-2 bg-success">Content2</div>
+        <div class="justify_content text-black p-2 bg-success">Content3</div>
+      </div>
+    </div>
+    <!-- Justify Content Ends Here: -->
+    <!-- Justify Content Between Starts Here: -->
+    <h4>Justify Content Between Here:</h4>
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <div class="justify_content text-black p-2 bg-danger">Content1</div>
+        <div class="justify_content text-black p-2 bg-danger">Content2</div>
+        <div class="justify_content text-black p-2 bg-danger">Content3</div>
+      </div>
+    </div>
+    <!-- Justify Content Between Ends Here: -->
+    <!-- Justify Content Around Starts Here: -->
+    <h4>Justify Content Around Here:</h4>
+    <div class="container">
+      <div class="d-flex justify-content-around">
+        <div class="justify_content text-black p-2 bg-danger">Content1</div>
+        <div class="justify_content text-black p-2 bg-danger">Content2</div>
+        <div class="justify_content text-black p-2 bg-danger">Content3</div>
+      </div>
+    </div>
+    <!-- Justify Content Around Ends Here: -->
+    <!-- Justify Content Evenly Starts Here: -->
+    <h4>Justify Content Evenly Here:</h4>
+    <div class="container">
+      <div class="d-flex justify-content-evenly">
+        <div class="justify_content text-black p-2 bg-danger">Content1</div>
+        <div class="justify_content text-black p-2 bg-danger">Content2</div>
+        <div class="justify_content text-black p-2 bg-danger">Content3</div>
+      </div>
+    </div>
+    <!-- Justify Content Evenly  Ends Here: -->
+
+
+    <!-- Align Items starts Here -->
+    <div class="d-flex align-items-start bg-info div1">
+        <div class="bg-success">item-1</div>
+        <div class="bg-success">item-2</div>
+        <div class="bg-success">item-3</div>      
+    </div>
+    <!-- Align Items ends Here -->
+    <!-- Align Items End starts Here -->
+    <h4>Align Items End</h4>
+    <div class="d-flex align-items-end bg-warning  div1">
+        <div class="bg-success">item-1</div>
+        <div class="bg-success">item-2</div>
+        <div class="bg-success">item-3</div>      
+    </div>
+    <!-- Align Items ends Here -->
+    <!-- Align Items Center starts Here -->
+    <h4>Align Items Center</h4>
+    <div class="d-flex align-items-center bg-primary div1">
+        <div class="bg-success">item-1</div>
+        <div class="bg-success">item-2</div>
+        <div class="bg-success">item-3</div>      
+    </div>
+    <!-- Align Items Center ends Here -->
+    <!-- Align Items Center starts Here -->
+    <h4>Align Items Baseline</h4>
+    <div class="d-flex align-items-baseline bg-secondary  div1">
+        <div class="bg-success">item-1</div>
+        <div class="bg-success">item-2</div>
+        <div class="bg-success">item-3</div>      
+    </div>
+    <!-- Align Items Center ends Here -->
+    <!-- Align Items Stretch starts Here -->
+    <h4>Align Items Stretch Start Here:</h4>
+    <div class="d-flex align-items-stretch bg-denger div1">
+        <div class="bg-secondary">item-1</div>
+        <div class="bg-warning">item-2</div>
+        <div class="bg-primary">item-3</div>      
+    </div>
+    <!-- Align Items Stretch ends Here -->
+</body>
+</html>
